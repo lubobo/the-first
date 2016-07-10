@@ -23,7 +23,7 @@ mysqli_data_seek($result, $started_record);
 
 while ($row=mysqli_fetch_array($result)and $j>0) {
   echo'<p class="p7" style="font-size:1.5em;">'.$row['title'].'</p>';
-  echo'<p class="p8" style="font-size:1.1em;">'.substr($row["content"],0,354).'.....<a class="a5" href="http://localhost//writing//essay_show1.php?title='.$row["title"].'">查看全文</a></p>';
+  echo'<p class="p8" style="font-size:1.1em;">'.substr($row["content"],0,360).'.....<a class="a5" href="http://localhost//writing//essay_show1.php?title='.$row["title"].'">查看全文</a></p>';
   echo'<p class="p9" style="font-size:1em;">'.$row['time'].'</p>'.'<br>';
   if(isset($_SESSION['admin'])) {
     if(isset($_SESSION['admin'])){
